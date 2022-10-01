@@ -12,7 +12,7 @@
 		<!--<link rel="stylesheet" href="assets/css/main.css" /> -->
 		<link rel="stylesheet" href="assets/bootstrap-5.1.3/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/sidebars/sidebars.css" />
-		
+		<script src="assets/Jquery/Jquery-3.6.0.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload" style="color:#212529">
@@ -35,6 +35,14 @@
 		background-repeat: repeat;
 		background-size: 150px;
 	}
+	.card
+	{
+		width: 300px;
+	}
+	.card-img-top
+	{
+		height: 56px;
+	}
 	</style>
 	
 	<script>
@@ -45,6 +53,15 @@
 				new bootstrap.Tooltip(tooltipTriggerEl)
 			})
 	})()
+
+	$(document).ready(function(){
+        // Open modal on page load
+        //$("#modalAssignment1Modal").show();
+
+		$(".close_button").click(function(){
+			$(".modal").hide();
+		});
+	});
 
 	</script>
 	
@@ -64,7 +81,7 @@
         </nav>
 	
 	<div class="flex-shrink-0 p-3 bg-dark thisIsMySideBar" style="width: 280px; float:left; color:#343a40; margin-top:1px;  border-top-width:2px; border-top-color:#dee2e6">
-	<div class="border-top"></div>
+		<div class="border-top"></div>
 		<a href="/" class="d-flex align-items-center pb-3 mb-3 link-light text-decoration-none border-bottom">
 			<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
 			<span class="fs-5 fw-semibold">Menu</span>
@@ -89,8 +106,9 @@
 			<div class="collapse" id="dashboard-collapse">
 			<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 				<li><a href="#" class="link-light rounded">Overview</a></li>
-				<li><a href="LCYS_PCOM7E_2022.html" class="link-light rounded">Module: Cyber Security March 2022</a></li>
-				<li><a href="NS_PCOM7E_2022.html" class="link-light rounded">Module: Network Security June 2022</a></li>
+				<li><a href="#" class="link-light rounded">Module: Launching into Cyber Security March 2022</a></li>
+				<li><a href="#" class="link-light rounded">Monthly</a></li>
+				<li><a href="#" class="link-light rounded">Annually</a></li>
 			</ul>
 			</div>
 		</li>
@@ -122,44 +140,9 @@
 		</li>
 		</ul>
   </div>
-	<div class="b-example-divider" style="flex; float:left; color:#212529"></div>
 	<div class="container ">
 		<div class="row">
-			<!--<div id="wrapper">
-				<div id="bg"></div>
-					<div id="overlay"></div>
-					<div id="main">
-		
-						
-						
-							<header id="header">
-								<nav><a href="#menu">Menu</a></nav>
-								<h1>Adam Jensen</h1>
-								<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
-								<nav>
-									<ul>
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-								</nav>
-							</header>
-							<section>
-								<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
-							</section>
-							<section>
-								<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
-							</section>
-						
-							<footer id="footer">
-								<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-							</footer>
-		
-					</div>
-				</div>
-			</div> -->
+
 		</div>
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
@@ -189,57 +172,31 @@
                         <section class="mb-5">
                             <p class="fs-5 mb-4">Cyber Security</p>
                             <p class="fs-5 mb-4">This week in my course. [Place Summary here]</p>
-                            <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <h2 class="fw-bolder mb-4 mt-5">Belief in the good of Technology.</h2>
-                            <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
-                            <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
-                        </section>
-                    </article>
-                    <!-- Comments section-->
-                    <section class="mb-5">
-                        <div class="card bg-light">
-                            <div class="card-body">
-                                <!-- Comment form-->
-                                <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
-                                <!-- Comment with nested comments-->
-                                <div class="d-flex mb-4">
-                                    <!-- Parent comment-->
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                    <div class="ms-3">
-                                        <div class="fw-bold">Commenter Name</div>
-                                        If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
-                                        <!-- Child comment 1-->
-                                        <div class="d-flex mt-4">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">Commenter Name</div>
-                                                And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
-                                            </div>
-                                        </div>
-                                        <!-- Child comment 2-->
-                                        <div class="d-flex mt-4">
-                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                            <div class="ms-3">
-                                                <div class="fw-bold">Commenter Name</div>
-                                                When you put money directly to a problem, it makes a good headline.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single comment-->
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                    <div class="ms-3">
-                                        <div class="fw-bold">Commenter Name</div>
-                                        When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- Side widgets-->
-                <div class="col-lg-4">
+
+
+							<!-- Modal-->
+							<div id="modalAssignment1Modal" class="modal" style="display:none">
+								<div class="modal modal-sheet position-float d-block bg-secondary py-5" style="display:none" tabindex="-1" role="dialog" id="modalSheet">
+									<div class="modal-dialog" role="document">
+									  <div class="modal-content rounded-6 shadow">
+										<div class="modal-header border-bottom-0">
+										  <h5 class="modal-title">Modal title</h5>
+										  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body py-0">
+										  <p>This is a modal sheet, a variation of the modal that docs itself to the bottom of the viewport like the newer share sheets in iOS.</p>
+										</div>
+										<div class="modal-footer flex-column border-top-0">
+										  <button type="button" class="btn btn-lg btn-primary w-100 mx-0 mb-2">Save changes</button>
+										  <button type="button" class="btn btn-lg btn-light w-100 mx-0 close_button" data-bs-dismiss="modal">Close</button>
+										</div>
+									  </div>
+									</div>
+								</div>
+							  </div>
+							  <!--End Modal-->
+				</div>
+				<div class="col-lg-4">
                     <!-- Search widget-->
                     <div class="card mb-4">
                         <div class="card-header">Search</div>
@@ -278,8 +235,149 @@
                         <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
                     </div>
                 </div>
+			</div>
+		</div>
+			<!-- Begin album-->
+				<div class="container">
+					<div class="row"></div>
+					<div class="row">
+						<div class="col-lg-4" >
+							<div class="card" style="margin:30px; width:100%">
+								<div class="card-img-top" style="width: 100%; background-color:#55595c; color:#e2e5e8">
+									<h5 class="card-title">Unit 1 - History of Network Security, Vulnerabilities and Approaches</h5>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Unit 1 - Introduction</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4" >
+							<div class="card shadow-sm" style="margin:30px;  width:100%">
+								<div class="card-img-top" style="width: 100%;  background-color:#55595c; color:#e2e5e8">
+									<h5 class="card-title">Unit 2 - Advanced Persistent Threats: Applying the Cyber Kill Chain Model to a Case Study</h5>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Unit 1 - Introduction</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4" >
+							<div class="card shadow-sm" style="margin:30px;  width:100%">
+								<div class="card-img-top" style="width: 100%;  background-color:#55595c; color:#e2e5e8">
+									<h5 class="card-title">Unit 3 - Vulnerability Assessments</h5>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Unit 1 - Introduction</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col-lg-4">
+							<div class="card shadow-sm" style="margin:30px;  width:100%">
+								<div class="card-img-top" style="width: 100%;  background-color:#55595c; color:#e2e5e8">
+									<h5 class="card-title">Unit 4 - Breach Analysis and Mitigation</h5>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Unit 1 - Introduction</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="card shadow-sm" style="margin:30px;  width:100%">
+								<div class="card-img-top" style="width: 100%;  background-color:#55595c; color:#e2e5e8">
+									<h5 class="card-title">Unit 5 - Logging, Forensics and Future Trends</h5>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Unit 1 - Introduction</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="card shadow-sm" style="margin:30px;  width:100%">
+								<div class="card-img-top" style="width: 100%;  background-color:#55595c; color:#e2e5e8">
+									<h5 class="card-title">Unit 6 - The Great Debate: The Future of the Internet</h5>
+								</div>
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Unit 1 - Introduction</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+									<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+							<!-- end album-->
+			<div class="container">
+				<div class="row-lg-8">
+					<!-- Comments section-->
+					<section class="mb-5">
+						<div class="bg-light">
+							<div class="card-body">
+								<!-- Comment form-->
+								<form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
+								<!-- Comment with nested comments-->
+								<div class="d-flex mb-4">
+									<!-- Parent comment-->
+									<div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+									<div class="ms-3">
+										<div class="fw-bold">Commenter Name</div>
+										If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
+										<!-- Child comment 1-->
+										<div class="d-flex mt-4">
+											<div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+											<div class="ms-3">
+												<div class="fw-bold">Commenter Name</div>
+												And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
+											</div>
+										</div>
+										<!-- Child comment 2-->
+										<div class="d-flex mt-4">
+											<div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+											<div class="ms-3">
+												<div class="fw-bold">Commenter Name</div>
+												When you put money directly to a problem, it makes a good headline.
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Single comment-->
+								<div class="d-flex">
+									<div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+									<div class="ms-3">
+										<div class="fw-bold">Commenter Name</div>
+										When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
             </div>
-        </div>
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; DM 2022</p></div>
@@ -288,6 +386,7 @@
         <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+		
 		<script src="assets/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
 		<script src="assets/sidebars/sidebars.js" />
 		
