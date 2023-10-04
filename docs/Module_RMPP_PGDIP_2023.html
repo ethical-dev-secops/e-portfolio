@@ -35,6 +35,13 @@
 		background-repeat: repeat;
 		background-size: 150px;
 	}
+	.card {
+		height: 400px;
+		margin-top: 10px;
+	}
+	.card > img {
+		max-height: 200px;
+	}
 	</style>
 	
 	<script>
@@ -138,7 +145,7 @@
         <!-- Page content-->
         <div class="container mt-5" style=" margin-left:1px ; background-color: rgba(192, 192, 192, 0.815); opacity: 88%;">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <!-- Post content-->
                     <article>
                         <!-- Post header-->
@@ -146,18 +153,46 @@
                             <!-- Post title-->
                             <h1 class="fw-bolder mb-1">Module: Research Methods and Professional Practice</h1>
                             <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2">Posted on May 1, 2023 by DM</div>
+                            <div class="text-muted fst-italic mb-2">Posted on September 25, 2023 by DM</div>
                             <!-- Post categories-->
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Risk Analyst</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="#!">Post-Graduate</a>
                         </header>
                         <!-- Preview image figure-->
-                        <figure class="mb-4"><img class="img-fluid rounded" src="assets/ResearchGraphs 133347.jpg" alt="..." /></figure>
+						<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							  </div>
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								<img style="max-height: 300px; max-width: 500px;" src="assets/ResearchGraphs 133347.jpg" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img style="max-height: 300px; max-width: 500px;" src="assets/RMPP/Assessment 2.2.jpg" class="d-block w-100" alt="...">
+							  </div>
+							  <div class="carousel-item">
+								<img style="max-height: 300px; max-width: 500px;" src="assets/RMPP/Fig10.jpg" class="d-block w-100" alt="...">
+							  </div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							  </button>
+						  </div>
                         <!-- Post content-->	
 						<section> 
 						
 							<h2 class="fw-bolder mb-4 mt-5">Introduction</h2>
-						
+							<p>Welcome to my e-Portfolio for the Research Methods and Professional Practice module.</p>
+							<p>This subject forms the foundation for further Academic Research, and is conseuqently the basis for a Masters Thesis.</p>
+							<p>Within this web page, will be links to various Units and Topics related to the module.</p>
+
 						</section>
 						
 						<section> 
@@ -167,96 +202,86 @@
 						</section>
 						
 						<section>
-						 
-							<h2 class="fw-bolder mb-4 mt-5">Unit 1: Scientific Investigation and Ethics</h2>
-							<p class="fs-5 mb-4"> The benefits of using Inductive and deductive reasoning were discussed in detail.
-							
-							<img src="assets\RMPP\Fig1.jpg"> </img>
-							Figure 1 - Types of reasoning (Source: Cherednichenko, 2020) 
-							
-							The differences between Ethos, Pathos and Logos were examined. This led to the understanding of objecitive and subjective reasoning. The usefulness of ethics as a part of the scientific method was also analyzed.						
-						</p>
-						</section>
-						
-						<section> 
+							<h2 class="fw-bolder mb-4 mt-5">Units / Sub-Topics</h2>
+							<div class="row">
+								<div class="col-sm-4">
 
-							<h2 class="fw-bolder mb-4 mt-5">Unit 2: Research Questions, the Literature Review and the Research Proposal</h2>
-							<p class="fs-5 mb-4">My personal topic for the Literature Review, was the Frankfurt Deutschebahn train system.
-							I found it fascinating that they are migrating to the cloud across the majority of their departments. The conclusions from my literature review made this topic somewhat impractical for the formulation of my research proposal however. 
-						
-							<img src="assets\RMPP\Fig2.jpeg"> </img>
-							Figure 2 – Slide from Seminar 2 – Unit 3
-						</p>
-						</section>
-						
-						
-						<section>
-						 	
-							<h2 class="fw-bolder mb-4 mt-5">Unit 3: Research Methods</h2>
-							
-							<p class="fs-5 mb-4"> Quantitative and Qualitative methodologies were investigated in detail.
-							Qualitative studies involve interviews, while quantitative research involves experiments and questionnaires.
-							The seminar involved exploring these research methods.						
-						</p>
-						</section>
-						
-						<section>
-						  	
-							<h2 class="fw-bolder mb-4 mt-5">Unit 4: Case Studies, Focus Groups and Observations</h2>
-							<p class="fs-5 mb-4">
-							Various qualitative research methods were investigated in-depth. The one I personally found the most interesting and useful was focus groups. There is a deep, sociological aspect, almost tantamount to profiling, which I found quite intriguing. This is especially fascinating as to how it relates with statistical models (Kitzinger, 1995).
-						</p>
-						</section>
-						
-						<section>
-						  	
-							<h2 class="fw-bolder mb-4 mt-5">Unit 5: Interviews and Survey Methods</h2>
-							<p class="fs-5 mb-4">
-							Of great benefit was the explanation of how to conduct a proper interview or survey template. Effort should always be placed on emphasizing both the Objective and Subjective nature of enquiry (Fowler, 2013).
-							
-								• Personal Interviews provide Body Language, which may imply accentuation to their statements.
-							
-								• Subject Matter Expert Interviews provide a greater level of technical information.						
-						</p>
-						<img src="assets\RMPP\CoolIcon.jpg"> </img>
-						</section>
-						
-						<section>
-						  	<h2 class="fw-bolder mb-4 mt-5">Unit 6: Questionnaire Design</h2>
-							<p class="fs-5 mb-4">
-							Methods for Data Collection	
-							<img src="assets\RMPP\Fig3.jpg"> </img>
-							Figure 3 – Survey Design							
-						</p>
-						</section>
-						
-						
-						<section>
-						  
-<h2 class="fw-bolder mb-4 mt-5">Unit 7: Validity and Generalisability in Research</h2>
-<p class="fs-5 mb-4">
-The topic mostly revolved around reflective thinking.
-In unit 7 a collaborative learning discussion was conducted. I responded to three of my peers, and enquired deeper about ethical considerations. 						
-						</p>
-						<img src="assets\RMPP\Fig4.jpg"> </img>
-						Figure 4 – Initial Post
-						<img src="assets\RMPP\Fig5.jpg"> </img>
-						Figure 5 – Peer Response 1
-						<img src="assets\RMPP\Fig6.jpg"> </img>
-						Figure 6 – Peer Response 2
-						<img src="assets\RMPP\Fig7.jpg"> </img>
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig1.jpg"  class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 1: Scientific Investigation and Ethics</h5>
+											<p class="card-text">The benefits of using Inductive and deductive reasoning.</p>
+											<a href="Module_RMPP_PGDIP_2023_unit1.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+								
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig2.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 2: Research Questions, the Literature Review and the Research Proposal</h5>
+											<p class="card-text">Indepth examination of Academic literature and how to formulate a research proposal.</p>
+											<a href="Module_RMPP_PGDIP_2023_unit2.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="..." class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 3: Research Methods</h5>
+											<p class="card-text">Quantitative and Qualitative methodologies as well as interview methods.</p>
+											<a href="Module_RMPP_PGDIP_2023_unit3.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="..." class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 4: Case Studies, Focus Groups and Observations</h5>
+											<p class="card-text">Investigation of qualitative research methods.</p>
+											<a href="Module_RMPP_PGDIP_2023_unit4.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\CoolIcon.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 5: Interviews and Survey Methods</h5>
+											<p class="card-text">Indepth exploration of how to conduct interviews.</p>
+											<a href="Module_RMPP_PGDIP_2023_unit5.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig3.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 6: Questionnaire Design</h5>
+											<p class="card-text">Methods for Data Collection and Survey Design</p>
+											<a href="Module_RMPP_PGDIP_2023_unit6.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig5.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 7: Validity and Generalisability in Research</h5>
+											<p class="card-text">Utility and Ethics of Reflective Thinking.</p>
+											<a href="Module_RMPP_PGDIP_2023_unit7.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
 
-						Figure 7 – Peer Response 3
-						</section>
-						
-						<section>
-						   
-							<h2 class="fw-bolder mb-4 mt-5">Unit 8: Inferential Statistics</h2>
-						<p class="fs-5 mb-4">
-							In this module, we learnt about employing the Mean, Median and Standard Deviation functions. This are useful when trying to categorize data (Berenson, 2015).
-							I acquired invaluable skills regarding statistical inferencing. I took the course testcases and implemented them in Python.						
-						</p>
-						<img src="assets\RMPP\Fig8.jpg"> </img>
+						<!--<img src="assets\RMPP\Fig8.jpg"> </img>
 						Figure 8 – Excel Workbook Exa 8.6B on Weightloss
 						<img src="assets\RMPP\Table1.jpg"> </img>
 						Table 1 – Useful Excel spreadsheet functions	
@@ -266,92 +291,147 @@ In unit 7 a collaborative learning discussion was conducted. I responded to thre
 						Table 2 – Statistical formulas in algebraic format
 						<img src="assets\RMPP\Fig10.jpg"> </img>
 						E-Portfolio Research Methods & Professional Practice 13
-Figure 10 – An example of an exercise I performed from the workbook
+						Figure 10 – An example of an exercise I performed from the workbook
 						<img src="assets\RMPP\Fig11.jpg"> </img>
 						Figure 11 – My python implementation of the course’s Exa 8.6B exercise
 						<img src="assets\RMPP\Fig12.jpg"> </img>
 						Figure 12 – The results of my Python statistical inferencing code
-						
-						
-						</section>
-						
-						<section>
-						    <h2 class="fw-bolder mb-4 mt-5">Unit 9: Analysing Qualitative Data</h2>
-							<p class="fs-5 mb-4">
-							In Unit 9, we had some more interesting statistical analyses:  
-						
-							<img src="assets\RMPP\Fig12.2.jpg"> </img>
-							I enjoyed implementing data analysis on the courses spreadsheets.
-							As per usual, I utilized Python for data modelling.
-							<img src="assets\RMPP\Fig13.jpg"> </img>
-							Figure 13 – Graph detailing Python output from Workbook Exe 9
-							</p>
-
-						</section>
-						
-						<section>
-						  <h2 class="fw-bolder mb-4 mt-5">Unit 10: Research Writing</h2>
-						  <p class="fs-5 mb-4">
-I completed my research proposal outline and presentation. I attempted to linearise my thoughts and holisticly convey my ideas in my videologue, but I was quite nervous. I maintained good academic form, structured my presentation in line with industry norms.
-My outline was rather neat and concise.   
-							 
-						</p>
-						</section>
-						
-						<section>
-						  <h2 class="fw-bolder mb-4 mt-5">Unit 11: Professional Development – Your e-Portfolio</h2>
-						  <p class="fs-5 mb-4">
-						
-							In this Unit we read about the importance of e-portfolios. Authors such as Winchell (2018)
-							explain the significance of this in great detail. The general consensus is that a well
-							designed e-portfolio can help candidates achieve career goals and gain employment.
-							A great deal of e-portfolio work is web design related, and as such I do need to develop my
-							skills a bit further.
-							Within this unit, we delved into reflective writing. Many universities have important articles
-							on this topic, such as the University of Birmingham (2015) and the University of
-							Portsmouth (2015).
-						</section>
-						
-						<section>
-						  <h2 class="fw-bolder mb-4 mt-5">Unit 12: Project Management and Managing Risk</h2>
-						  <p class="fs-5 mb-4">
-Project management techniques such as the STRIDE and SPIRAL methodologies were examined in detail. I found STRIDE to be particularly beneficial (Hijazi, 2012). 
-<img src="assets\RMPP\Fig15.jpg"> </img>    
-Figure 15 – Spiral Risk Methodology (Source: Gurendo, 2015)
-						</p>
-						</section>
-						
-				
-						
-						
-						
+						!-->
 						
 
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig8.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">Unit 8: Inferential Statistics</h5>
+										  <p class="card-text">Mean, Median and Standard Deviation functions. Python Graphing.</p>
+										  <a href="Module_RMPP_PGDIP_2023_unit8.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig13.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">Unit 9: Analysing Qualitative Data</h5>
+										  <p class="card-text">Intermediate Statistical functions and Python representation of data.</p>
+										  <a href="Module_RMPP_PGDIP_2023_unit9.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="..." class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">Unit 10: Research Writing</h5>
+										  <p class="card-text">Research Proposal Outline and Acadmic Writing.</p>
+										  <a href="Module_RMPP_PGDIP_2023_unit10.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="..." class="card-img-top" alt="...">
+										<div class="card-body">
+										  <h5 class="card-title">Unit 11: Professional Development - e-Portfolio</h5>
+										  <p class="card-text">Examination of how an e-Portfolio is useful to showcase academic progress.</p>
+										  <a href="Module_RMPP_PGDIP_2023_unit11.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+						
+						  		<div class="col-sm-4">
+									<div class="card" style="width: 18rem;">
+										<img src="assets\RMPP\Fig15.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Unit 12: Project Management and Managing Risk</h5>
+											<p class="card-text">Project management techniques such as the STRIDE and SPIRAL methodologies were examined in detail</p>
+											<a href="Module_RMPP_PGDIP_2023_unit12.html" class="btn btn-primary">Go somewhere</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
                     </article>
+
 					<article>
-					<h1>Assessments</h1>
-						<h2>Summative Assignment 1 – Literature Review</h2>
-							[Description]: A topic was selected from a predefined list. In my instance, it was about the
-							Cyber Security of a Public Transport Network for a City of my choice. I chose to explore
-							Frankfurt’s Railway System.
-							<img src="assets\RMPP\Assessment 1.jpg"> </img>
-							
-							[Reflections]: I learnt from this experience, that I need to remove contractions and
-							abbreviations from my work. I also understand that perhaps I should refrain from
-							introducing subtopics with little to no academic information, as it detracts from the
-							perception of the article as a whole.
-							
-							
-							<h2>Summative Assignment 2 – Literature Review</h2>
-							[Description]: A topic was selected from a predefined list. In my instance, it was about the
-							Cyber Security of a Public Transport Network for a City of my choice. I chose to explore
-							Frankfurt’s Railway System.
-							<img src="assets\RMPP\Assessment 2.jpg"> </img>
-							[Reflections]: I feel I could have done a better job, had I been more open to more
-							experimental research methodologies (Fry,2007; Phelps, 2018; Otten, 2015).
-							Also, I should have been more relaxed
-							<img src="assets\RMPP\Assessment 2.1.jpg"> </img>
-							<img src="assets\RMPP\Assessment 2.2.jpg"> </img>
+						<h2>Reflections</h2>
+						<div class="Row">
+							<div class="col-sm-4">
+								<div class="card">
+
+								</div>
+								<div class="card-body">
+									<div class="card-title">SWOT Analysis</div>
+									<div class="card-text"></div>
+									<a href="" class="btn btn-primary">Open</a>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="card">
+
+								</div>
+								<div class="card-body">
+									<div class="card-title">Skills Matrix</div>
+									<div class="card-text"></div>
+									<a href="" class="btn btn-primary">Open</a>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="card">
+
+								</div>
+								<div class="card-body">
+									<div class="card-title">Action Plan</div>
+								<div class="card-text"></div>
+								<a href="" class="btn btn-primary">Open</a>
+								</div>
+	
+							</div>
+						</div>
+					</article>
+
+					<article>
+						<h2>Assessments</h2>
+
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="card" style="width: 18rem;">
+									<img src="assets\RMPP\Assessment 1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5 class="card-title">Summative Assignment 1 – Literature Review</h5>
+									  <p class="card-text">Investigation into Academic Literature related to Cyber Security.</p>
+									  <a href="Module_RMPP_PGDIP_2023_unit10.html" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="card" style="width: 18rem;">
+									<img src="assets\RMPP\Assessment 2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5 class="card-title">Summative Assignment 2 – Research Proposal</h5>
+									  <p class="card-text">Research proposal on Cyber-security legistlative framework.</p>
+									  <a href="Module_RMPP_PGDIP_2023_unit11.html" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+				
+						  	<div class="col-sm-4">
+								<div class="card" style="width: 18rem;">
+									<img src="assets\RMPP\Fig15.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Summative Assignment 3 - Reflections</h5>
+										<p class="card-text">Reflective supplement to e-Portfolio.</p>
+										<a href="Module_RMPP_PGDIP_2023_unit12.html" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+							<!--<img src="assets\RMPP\Assessment 2.1.jpg"> </img>
+							<img src="assets\RMPP\Assessment 2.2.jpg"> </img> !-->
 					</article>
 						<section>
 						  <h2 class="fw-bolder mb-4 mt-5">Conclusion - Review of Course as a Whole</h2>
@@ -387,48 +467,6 @@ Figure 15 – Spiral Risk Methodology (Source: Gurendo, 2015)
 								</p>
 						</section>
 					</article>
-                    <!-- Comments section-->
-                    
-                </div>
-                <!-- Side widgets-->
-                <div class="col-lg-4">
-                    <!-- Search widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Search</div>
-                        <div class="card-body">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Categories widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Categories</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">JavaScript</a></li>
-                                        <li><a href="#!">CSS</a></li>
-                                        <li><a href="#!">Tutorials</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Side widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Side Widget</div>
-                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
-                    </div>
                 </div>
             </div>
         </div>
